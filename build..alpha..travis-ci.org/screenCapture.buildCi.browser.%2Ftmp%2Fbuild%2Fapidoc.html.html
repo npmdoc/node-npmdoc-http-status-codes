@@ -1,0 +1,540 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/prettymuchbryce/node-http-status#readme">http-status-codes (v1.1.6)</a>
+</h1>
+<h4>Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus API.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-status-codes">module http-status-codes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-status-codes.getStatusText">
+            function <span class="apidocSignatureSpan">http-status-codes.</span>getStatusText
+            <span class="apidocSignatureSpan">(statusCode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>ACCEPTED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>BAD_GATEWAY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>BAD_REQUEST</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>CONFLICT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>CONTINUE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>CREATED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>EXPECTATION_FAILED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>FAILED_DEPENDENCY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>FORBIDDEN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>GATEWAY_TIMEOUT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>GONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>HTTP_VERSION_NOT_SUPPORTED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>INSUFFICIENT_SPACE_ON_RESOURCE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>INSUFFICIENT_STORAGE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>INTERNAL_SERVER_ERROR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>LENGTH_REQUIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>LOCKED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>METHOD_FAILURE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>METHOD_NOT_ALLOWED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>MOVED_PERMANENTLY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>MOVED_TEMPORARILY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>MULTIPLE_CHOICES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>MULTI_STATUS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NETWORK_AUTHENTICATION_REQUIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NON_AUTHORITATIVE_INFORMATION</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NOT_ACCEPTABLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NOT_FOUND</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NOT_IMPLEMENTED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NOT_MODIFIED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>NO_CONTENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>OK</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PARTIAL_CONTENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PAYMENT_REQUIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PERMANENT_REDIRECT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PRECONDITION_FAILED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PRECONDITION_REQUIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PROCESSING</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>PROXY_AUTHENTICATION_REQUIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>REQUESTED_RANGE_NOT_SATISFIABLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>REQUEST_HEADER_FIELDS_TOO_LARGE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>REQUEST_TIMEOUT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>REQUEST_TOO_LONG</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>REQUEST_URI_TOO_LONG</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>RESET_CONTENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>SEE_OTHER</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>SERVICE_UNAVAILABLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>SWITCHING_PROTOCOLS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>TEMPORARY_REDIRECT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>TOO_MANY_REQUESTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>UNAUTHORIZED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>UNPROCESSABLE_ENTITY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>UNSUPPORTED_MEDIA_TYPE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">http-status-codes.</span>USE_PROXY</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-status-codes" id="apidoc.module.http-status-codes">module http-status-codes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-status-codes.getStatusText" id="apidoc.element.http-status-codes.getStatusText">
+        function <span class="apidocSignatureSpan">http-status-codes.</span>getStatusText
+        <span class="apidocSignatureSpan">(statusCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStatusText = function (statusCode) {
+  if (statusCodes.hasOwnProperty(statusCode)) {
+    return statusCodes[statusCode];
+  } else {
+    throw new Error("Status code does not exist: " + statusCode);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+response
+	.status(HttpStatus.OK)
+	.send('ok');
+
+response
+	.status(HttpStatus.INTERNAL_SERVER_ERROR)
+	.send({
+		error: HttpStatus.<span class="apidocCodeKeywordSpan">getStatusText</span>(HttpStatus.INTERNAL_SERVER_ERROR)
+	});
+```
+
+## Codes
+
+Constant                            | Code  | Message
+------------------------------------|-------|-----------------------------------
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
